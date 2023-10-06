@@ -1,0 +1,32 @@
+
+.Counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+.Controls{
+    display: flex;
+    flex-direction: row;
+}
+  
+
+.Button {
+    background-color: #8AAE3F;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+.Button:hover {
+        color: #8AAE3F;
+        background-color: white ;
+        border: solid 2px #8AAE3F ;
+  }
+
+  .Number {
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+  
