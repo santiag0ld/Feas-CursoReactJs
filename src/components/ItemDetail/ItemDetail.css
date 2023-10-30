@@ -1,0 +1,9 @@
+.itemHeader {
+    padding: 10px;
+}
+
+.ItemImg {
+    display: flex;
+    max-width: fit-content;
+    margin-bottom: 20px ;
+}

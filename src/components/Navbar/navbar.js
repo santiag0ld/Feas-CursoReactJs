@@ -1,7 +1,7 @@
 import React from "react";
 import CartWidget from '../CartWidget/CartWidget';
 import './navbar.css';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
@@ -24,28 +24,28 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item dropdown">
-
-                <Link to="#" className="nav-link dropdown-toggle" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Productos
-                </Link>
-                <div className="dropdown-menu" aria-labelledby="productosDropdown">
-                  <Link to="/category/sueltos" className="dropdown-item">Sueltos</Link>
-                  <Link to="/category/heladera" className="dropdown-item">Heladera</Link>
-                  <Link to="/category/hierbas" className="dropdown-item">Hierbas</Link>
-                </div>
+              <Link to="#" className="nav-link dropdown-toggle" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Productos
+              </Link>
+              <div className="dropdown-menu" aria-labelledby="productosDropdown">
+                <Link to={"/category/sueltos"} className="dropdown-item">Sueltos</Link>
+                <Link to={"/category/heladera"} className="dropdown-item">Heladera</Link>
+                <Link to={"/category/hierbas"} className="dropdown-item">Hierbas</Link>
+              </div>
             </li>
             <li className="nav-item">
-              <Link to="/carrito" className="nav-link">Carrito</Link>
+              <Link to="/cart" className="nav-link">Carrito</Link>
             </li>
             <li className="nav-item">
               <Link to="/contacto" className="nav-link">Contacto</Link>
             </li>
           </ul>
         </div>
+        <CartWidget />
       </div>
-      <CartWidget />
     </nav>
   );
 };
 
-export default Navbar;
+export default Navbar
+
